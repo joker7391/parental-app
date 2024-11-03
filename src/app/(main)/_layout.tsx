@@ -46,7 +46,12 @@ const DrawerLayout = () => {
           ),
 
           headerRight: () => (
-            <Pressable className=" pr-4">
+            <Pressable
+              onPress={() => {
+                router.navigate("/notification");
+              }}
+              className=" pr-4"
+            >
               <FontAwesome6 name="bell" size={20} color="white" />
             </Pressable>
           ),
@@ -80,6 +85,9 @@ const DrawerLayout = () => {
         <Drawer.Screen
           name="notification"
           options={{
+            drawerItemStyle: {
+              display: "none",
+            },
             drawerLabel: "Notification",
             title: "Notification",
           }}
