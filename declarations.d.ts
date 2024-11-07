@@ -21,11 +21,6 @@ declare module "*.mp4" {
   export default value;
 }
 
-declare module "*.gif" {
-  const value: any;
-  export default value;
-}
-
 declare var process: {
   env: any;
 };
