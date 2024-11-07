@@ -20,6 +20,13 @@ const CustomDrawerContent = (props: DrawerContentComponentProps) => (
     {/* Menu Items */}
     <View style={styles.menuContainer}>
       <Pressable
+        onPress={() => router.navigate("/home")}
+        style={styles.menuItem}
+      >
+        <Text style={styles.menuText}>HOME</Text>
+      </Pressable>
+
+      <Pressable
         onPress={() => router.navigate("/faqs")}
         style={styles.menuItem}
       >
@@ -40,7 +47,10 @@ const CustomDrawerContent = (props: DrawerContentComponentProps) => (
         <Text style={styles.menuText}>FEEDBACK</Text>
       </Pressable>
 
-      <Pressable onPress={() => router.navigate("/")} style={styles.menuItem}>
+      <Pressable
+        onPress={() => router.navigate("/about-us")}
+        style={styles.menuItem}
+      >
         <Text style={styles.menuText}>ABOUT US</Text>
       </Pressable>
 

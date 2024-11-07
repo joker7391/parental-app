@@ -11,7 +11,7 @@ export default function Index() {
       <Button
         title="Login"
         onPress={() => {
-          router.replace("/(main)/home");
+          router.push("/(main)/home");
         }}
       />
     </View>
