@@ -68,6 +68,7 @@ const DrawerLayout = () => {
       screenOptions={{
         headerShown: true,
         swipeEdgeWidth: 0,
+
         headerStyle: {
           backgroundColor: "#3559E0",
           shadowOpacity: 0,

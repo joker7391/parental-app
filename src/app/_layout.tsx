@@ -1,8 +1,5 @@
 import { Stack } from "expo-router";
-
 import "react-native-reanimated";
-
-// Prevent the splash screen from auto-hiding before asset loading is complete.
 
 export default function RootLayout() {
   return (
@@ -13,8 +10,13 @@ export default function RootLayout() {
           headerShown: false,
         }}
       />
-      <Stack.Screen name="(main)" options={{ headerShown: false }} />
-      {/* <Stack.Screen name="(drawer)" options={{ headerShown: false }} /> */}
+      <Stack.Screen
+        name="(main)"
+        options={{
+          headerShown: false,
+          gestureEnabled: false, // Disable swipe back gesture
+        }}
+      />
     </Stack>
   );
 }
